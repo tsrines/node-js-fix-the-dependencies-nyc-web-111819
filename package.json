@@ -1,0 +1,27 @@
+{
+  "name": "fix-the-dependencies",
+  "version": "0.1.0",
+  "description": "A Learn.co lab for the ins and outs of npm",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learn-co-curriculum/node-js-fix-the-dependencies.git"
+  },
+  "keywords": [
+    "learn",
+    "npm",
+    "node",
+    "javascript"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/learn-co-curriculum/node-js-fix-the-dependencies/issues"
+  },
+  "homepage": "https://github.com/learn-co-curriculum/node-js-fix-the-dependencies#readme",
+  "devDependencies": {
+    "chai-spies": "^0.7.1"
+  }
+}
