@@ -9,10 +9,6 @@ const lib = require('../lib');
 const expect = chai.expect;
 
 describe('lib', () => {
-  it('returns a function', () => {
-    expect(lib('foo')).to.be.a('function');
-  });
-
   it('logs the result of calling helloFlatiron()', () => {
     const spy = chai.spy.on(console, 'log');
 
