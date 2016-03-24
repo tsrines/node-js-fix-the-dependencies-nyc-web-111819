@@ -31,3 +31,8 @@ npm has a concept of `peerDependencies` that's important to understand.
 of a host package that we've already encountered is [Chai.js](http://chaijs.com/plugins/).
 Each Chai plugin has `chai` as a `peerDependency`, meaning that the plugin
 expects that it will be required in an environment that also has `chai`.
+
+**NOTE**: There will be a warning that a peerDependency hasn't been met
+_no matter what_. It's currently an open issue on npm: https://github.com/npm/npm/issues/3218.
+The trick is still to make sure to get the _right_ version of the peerDependency from
+the repository that we've provided. (Remember that you can refer to specific commits.)
