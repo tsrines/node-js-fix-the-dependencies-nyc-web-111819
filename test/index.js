@@ -9,14 +9,16 @@ const lib = require('../lib');
 const expect = chai.expect;
 
 describe('lib', () => {
+  afterEach(() => {
+    console.log.reset && console.log.reset();
+  });
+
   it('logs the result of calling helloFlatiron()', () => {
     const spy = chai.spy.on(console, 'log');
 
     lib('foo', spy);
 
     expect(spy).to.have.been.called.with('H-e-l-l-o-,- -f-o-o-.');
-
-    console.log.reset();
   });
 
 
@@ -25,8 +27,8 @@ describe('lib', () => {
 
     lib('foo', spy);
 
-    expect(spy).to.have.been.called.with(`High ${five.loud()}! ${five.upHigh()}`);
-
-    console.log.reset();
-  })
+    expect(spy).to.have.been.called.with(
+      `High ${five.loud()}! ${five.upHigh()}`
+    );
+  });
 });

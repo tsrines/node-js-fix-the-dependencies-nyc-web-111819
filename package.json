@@ -4,7 +4,7 @@
   "description": "A Learn.co lab for the ins and outs of npm",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
   },
   "repository": {
     "type": "git",
